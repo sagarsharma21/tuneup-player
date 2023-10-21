@@ -19,7 +19,7 @@ import { Track } from 'react-native-track-player';
             </Text> 
             
         </View>
-    </View>>
+    </View>
   )
 }
 
