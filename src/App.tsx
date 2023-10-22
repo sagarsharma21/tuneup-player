@@ -60,7 +60,7 @@ function App(): JSX.Element {
   return (
 
     <ScrollView>
-        <View>Fine</View>
+        <View><Text>Fine</Text></View>
     </ScrollView>
     
   );
