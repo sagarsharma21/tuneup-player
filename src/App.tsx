@@ -28,6 +28,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import {setupPlayer, addTrack} from "../musicPlayerServices";
+import MusicPlayer from './screen/MusicPlayer';
 
 
 
@@ -59,9 +60,11 @@ function App(): JSX.Element {
 
   return (
 
-    <ScrollView>
-        <View><Text>Fine</Text></View>
-    </ScrollView>
+    <View style={styles.container}>
+      <StatusBar barStyle={"light-content"}></StatusBar>
+      <MusicPlayer/>
+        <View><Text style={styles.footer}>Made with 🤍</Text></View>
+    </View>
     
   );
 }
@@ -86,6 +89,9 @@ const styles = StyleSheet.create({
   // },
   container: {
     flex:1,
+  },
+  footer:{
+    textAlign:'center'
   }
 
 });
